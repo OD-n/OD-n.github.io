@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+.logo { 
+	font-weight: bold;  
+	font-size: 25px;
+	font-style: italic;
+	color:#91216a;
+	}
+	
+.color-log	{
+	color:#91216a;
+	size: 5e;
+}
+
+.navgar	{color:#91216a;}
+
+.catnav	{
+	size: 15px;
+	color:#91216a;
+	size: 5e;
+	font-color: #91216a;
+}
+
