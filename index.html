@@ -27,7 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a class="navbar-brand" href="#"><span class="icon-spinner4 color-log"></span><b> GALATEA</b></a>
+       <a  data-toggle="tooltip" title="Conócenos!" class="navbar-brand" href="#"><span class="icon-spinner4 color-log"></span><strong> GALATEA</strong></a>
     </div>
   <div class="container-fluid">
     <div class="navbar-header">    
@@ -36,7 +36,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html"><span class="icon-home color-log"></span> Home</a></li>        
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="icon-stack color-log"></span><b> Categorias </b><span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="icon-stack color-log"></span><strong> Categorias </strong><span class="caret"></span></a>
           <ul class="dropdown-menu" >
             <li><a href="#" style="color:#6a2f60"><span class="icon-radio-checked catnav"></span> Calzado</a></li>
             <li><a href="#" style="color:#91216a"><span class="icon-radio-checked"></span> Lencería</a></li>
@@ -47,12 +47,12 @@
             <li><a href="#" style="color:#6a2f60"><span class="icon-radio-checked"></span> Joyería</a></li>
           </ul>
         </li>
-        <li><a href="Productos.html"><span class="icon-price-tags color-log"></span><b> Productos</b></a></li>
+        <li><a href="Productos.html"><span class="icon-price-tags color-log"></span><strong> Productos</strong></a></li>
         
-        <li><a href="Ubiquenos.html"><span class="icon-location2 color-log"></span><b> Ecuentrenos</b></a></li>
+        <li><a href="Ubiquenos.html"><span class="icon-location2 color-log"></span><strong> Ecuentrenos</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="Ubiquenos.html"><span class="icon-location2 color-log"></span><b> Contactenos</b></a></li>
+        <li><a href="Ubiquenos.html"><span class="icon-location2 color-log"></span><strong> Contactenos</strong></a></li>
       </ul>
 
     </div>
@@ -67,49 +67,64 @@
 <br/>
 <br/>
 	<div class="col-sm-5">
-		<div class="slideshow-container container-fluid text-center">
+	<div class="container" style="width:120%;">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	    </ol>
 	
-			<div class="mySlides fade">
-			  <div class="numbertext">1 / 3</div>
-			  <img class="img-rounded" src="ImagenesMostrar/carruselPrim/134 (Copiar).jpg" style="width:100%">
-			  <div class="text">Caption Text</div>
-			</div>
-			
-			<div class="mySlides fade">
-			  <div class="numbertext">2 / 3</div>
-			  <img class="img-rounded" src="ImagenesMostrar/carruselPrim/161 (Copiar).jpg" style="width:100%">
-			  <div class="text">Caption Two</div>
-			</div>
-			
-			<div class="mySlides fade">
-			  <div class="numbertext">3 / 3</div>
-			  <img class="img-rounded" src="ImagenesMostrar/carruselPrim/172 (Copiar).jpg" style="width:100%">
-			  <div class="text">Caption Three</div>
-			</div>
-			
-			<div class="mySlides fade">
-			  <div class="numbertext">4 / 3</div>
-			  <img class="img-rounded" src="ImagenesMostrar/carruselPrim/38 (Copiar).jpg" style="width:100%">
-			  <div class="text">Caption Text</div>
-			</div>
-			
-			<div class="mySlides fade img-rounded">
-			  <div class="numbertext">5 / 3</div>
-			  <img class="img-rounded" src="ImagenesMostrar/carruselPrim/79 (Copiar).jpg" style="width:100%">
-			  <div class="text">Caption Two</div>
-			</div>
-			
-			<br>
-			
-			<div style="text-align:center">
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span>
-			  <span class="dot"></span>
-			  <span class="dot"></span>
-			</div>
-		</div>
-		<br/>
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner">
+	
+	      <div class="item active">
+	        <img src="ImagenesMostrar/carruselPrim/134 (Copiar).jpg" alt="Los Angeles" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h4><strong>NEGRO - BLACK</strong></h4>
+	          <p>Simple - Atrevido - Formal!!!</p>
+	        </div>
+	      </div>
+	    
+	      <div class="item">
+	        <img src="ImagenesMostrar/carruselPrim/172 (Copiar).jpg" alt="New York" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h4><strong>LENCERIA</strong></h4>
+	          <p>Simple y elegante seducción!!!</p>
+	        </div>
+	      </div>
+	      
+	      <div class="item">
+	        <img src="ImagenesMostrar/carruselPrim/38 (Copiar).jpg" alt="New York" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h4><strong>MAQUILLAJE</strong></h4>
+	          <p>Suave y delicado con tu piel!!!</p>
+	        </div>
+	      </div>
+	      
+	      <div class="item">
+	        <img src="ImagenesMostrar/carruselPrim/79 (Copiar).jpg" alt="New York" style="width:100%;">
+	        <div class="carousel-caption">
+	          <h3>LANZAMIENTO DE TEMPORADA</h3>
+	          <p>Lo ultimo para nosotras!!!</p>
+	        </div>
+	      </div>
+	  
+	    </div>
+	
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
 <br/>
 <br/>
 <br/>
@@ -127,7 +142,7 @@
 	            <a href="#"><span class="icon-twitter fa-2x social"></span></a>
 	            <a href="mailto:serius.10.11@gmail.com"><span class="icon-mail4 fa-2x social"></span></a>
 	            
-	            <p class="txt-railway" Style="color:white"> - &copy;Derechos reservados- <span class="icon-spinner4 color-log"></span><b style="color:white"><abbr title="Galatea S.A.C.">GALATEA</abbr> </b></p>
+	            <p class="txt-railway" Style="color:white"> - &copy;Derechos reservados- <span class="icon-spinner4 color-log"></span><b style="color:white"><abbr title="Galatea S.A."> GALATEA</abbr> </strong></p>
 		</div>
 </div>
 </body>
