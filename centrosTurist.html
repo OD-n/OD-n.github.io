@@ -3,7 +3,7 @@
 <title>Centros turisticos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/CentrosT.css">
 <link rel="stylesheet" href="fonts/icomoon6/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,34 +13,32 @@
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
+    <i class="icon-menu4"></i>
   </a>
   <div class="w3-bar-block w3-center">
     <a href="centrosTurist.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Volver</a>
     <a href="AcercaDe.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Acerca de</a>
     <a href="DestTur.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Destinos Turísticos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"></a>
   </div>
 </nav>
 
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="icon-menu3"></i></span> 
+<div class="w3-clear"></div>
+</div>
 <!-- !Contenido de la Pagina! -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
+
 <header class="w3-center w3-margin-bottom">
   <h1 class="w3-animate-zoom"><strong>CAJAMARCA</strong></h1>
   <h3 class="w3-animate-fading"><strong>Su cultura popular es reconocida, en especial sus carnavales en febrero...</strong></h3>
   <h4 class="textCaj w3-animate-opacity">Pero <a class="cajamarcafont">Cajamarca</a> no es solo eso...</h4>
-  <p class="w3-padding-16"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" class="w3-button w3-black" onclick="myFunction()">Toque para visualizar diferente</button></p>
-  <div id="demo" class="collapse">
-    Se agregaron bordes
-  </div>
+  <p class="w3-padding-16"><button type="button" data-toggle="collapse" data-target="#demo" class="w3-button w3-blue" onclick="myFunction()">Bordes</button></p>
 </header>
 
-</div>
+
 
 <!-- Photo Grid -->
 <div class="w3-row" id="myGrid" style="margin-bottom:128px">
@@ -50,7 +48,7 @@
     <img class="w3-animate-bottom"src="ImagenesMostrar/CajamarcaCarga/carn3.jpg" style="width:100%">
     <img class="w3-animate-left"src="ImagenesMostrar/CajamarcaCarga/cent1.jpg" style="width:100%">
     <img class="w3-animate-right"src="ImagenesMostrar/CajamarcaCarga/cent2.jpg" style="width:100%">
-    <img class="w3-animate-fading"src="ImagenesMostrar/CajamarcaCarga/carn4.jpg" style="width:100%">
+    <img class="w3-animate-opacity"src="ImagenesMostrar/CajamarcaCarga/carn4.jpg" style="width:100%">
   </div>
 
   <div class="w3-third">
@@ -59,7 +57,7 @@
     <img class="w3-animate-bottom"src="ImagenesMostrar/CajamarcaCarga/cult1.jpg" style="width:100%">
     <img class="w3-animate-left"src="ImagenesMostrar/CajamarcaCarga/cult2.jpg" style="width:100%">
     <img class="w3-animate-right"src="ImagenesMostrar/CajamarcaCarga/cult3.jpg" style="width:100%">
-    <img class="w3-animate-fading"src="ImagenesMostrar/CajamarcaCarga/cult4.jpg" style="width:100%">
+    <img class="w3-animate-opacity"src="ImagenesMostrar/CajamarcaCarga/cult4.jpg" style="width:100%">
   </div>
 
   <div class="w3-third">
@@ -68,7 +66,7 @@
     <img class="w3-animate-bottom"src="ImagenesMostrar/CajamarcaCarga/rein1.jpg" style="width:100%">
     <img class="w3-animate-left"src="ImagenesMostrar/CajamarcaCarga/turis1.jpg" style="width:100%">
     <img class="w3-animate-right"src="ImagenesMostrar/CajamarcaCarga/turis2.jpg" style="width:100%">
-    <img class="w3-animate-fading"src="ImagenesMostrar/CajamarcaCarga/cult7.jpg" style="width:100%">
+    <img class="w3-animate-opacity"src="ImagenesMostrar/CajamarcaCarga/cult7.jpg" style="width:100%">
   </div>
 </div>
 

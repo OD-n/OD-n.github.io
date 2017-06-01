@@ -5,9 +5,11 @@
 <title>Destinos Turisticos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/CentrosT.css">
 <link rel="stylesheet" href="fonts/icomoon6/style.css">
+<link rel="stylesheet" href="css/AcercaDe.css">
 <link rel="stylesheet" href="css/DestinoTur.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,30 +18,328 @@
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
+    <i class="icon-menu4"></i>
   </a>
   <div class="w3-bar-block w3-center">
     <a href="centrosTurist.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Volver</a>
     <a href="AcercaDe.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Acerca de</a>
     <a href="DestTur.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Destinos Turísticos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"></a>
   </div>
 </nav>
-<!-- Header -->
+
 <div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="icon-menu3"></i></span> 
 <div class="w3-clear"></div>
 </div>
+<!-- Inicio Contenido de la pagina --> 
 
-<!-- Inicio Contenido de la pagina -->
+	
+
+
+
+<!-- Barra de navegación --> 
+
+<div class="w3-sidebar w3-bar-block w3-blue w3-card-2 w3-round-xlarge w3-animate-left" style="width:190px">
+  <button class="w3-bar-item w3-btn tablink w3-orange w3-large w3-padding-24" onclick="openLink(event, 'Fadez')"><span class="icon-delicious"></span> Vista rápida</button>
+  <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Fade')"><span class="icon-stackoverflow"></span> Baños del Inca</button>
+  <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Left')"><span class="icon-stackoverflow"></span> La Collpa</button>
+  <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Right')"><span class="icon-stackoverflow"></span> Santa Apolonia</button>
+  <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Top')"><span class="icon-stackoverflow"></span> Laguna San Nicolas</button>
+  <hr>
+</div>
+<!-- Página de presentación -->
+
+<div class="w3-container w3-blue w3-round-xlarge w3-animate-opacity" style="margin-left:200px;margin-right:10px;">
+	  <h1>CAJAMARCA</h1>
+	  <h2>Destinos Turísticos</h2>
+	</div>
+<hr>
+<div class="w3-container" style="margin-left:190px">
+
+  <div>
+
+  <div id="Fadez" class="w3-container city w3-animate-opacity" style="display:none">
+    <div class="w3-row-padding" style="margin:0 -16px">
+		  <div class="w3-quarter">
+		    <img src="ImagenesMostrar/CentsTurist/Baños2.jpg" style="width:100%;cursor:pointer"
+		    onclick="openModal();currentDiv(1)" class="w3-hover-shadow">
+		  </div>
+		  <div class="w3-quarter">
+		    <img src="ImagenesMostrar/CentsTurist/hacienda-la-collpa2.jpg" style="width:100%;cursor:pointer"
+		    onclick="openModal();currentDiv(2)" class="w3-hover-shadow">
+		  </div>
+		  <div class="w3-quarter">
+		    <img src="ImagenesMostrar/CentsTurist/SantaApolonia2.jpg" style="width:100%;cursor:pointer"
+		    onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+		  </div>
+		  <div class="w3-quarter">
+		    <img src="ImagenesMostrar/CentsTurist/viendo-la-laguna-san2.jpg" style="width:100%;cursor:pointer"
+		    onclick="openModal();currentDiv(3)" class="w3-hover-shadow">
+		  </div>
+		</div>
+		
+		<div id="myModal" class="w3-modal w3-black">
+		 <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+		 <div class="w3-modal-content">
+		
+		  <div class="w3-content" style="max-width:1200px">
+		   <img class="mySlides" src="ImagenesMostrar/CentsTurist/Baños2.jpg" style="width:100%">
+		   <img class="mySlides" src="ImagenesMostrar/CentsTurist/hacienda-la-collpa2.jpg" style="width:100%">
+		   <img class="mySlides" src="ImagenesMostrar/CentsTurist/SantaApolonia2.jpg" style="width:100%">
+		   <img class="mySlides" src="ImagenesMostrar/CentsTurist/viendo-la-laguna-san2.jpg" style="width:100%">
+		   <div class="w3-row w3-black w3-center">
+		    <div class="w3-display-container">
+		     <p id="caption"></p>
+		     <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+		     <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+		    </div>
+		    <div class="w3-col s3">
+		     <img class="demo w3-opacity w3-hover-opacity-off" src="ImagenesMostrar/CentsTurist/Baños2.jpg" style="width:100%" onclick="currentDiv(1)" alt="Relajate en los Baños del Inca">
+		    </div>
+		    <div class="w3-col s3">
+		     <img class="demo w3-opacity w3-hover-opacity-off" src="ImagenesMostrar/CentsTurist/hacienda-la-collpa2.jpg" style="width:100%" onclick="currentDiv(2)" alt="Disfruta del aire libre en la Hacienda la Colpa">
+		    </div>
+		    <div class="w3-col s3">
+		     <img class="demo w3-opacity w3-hover-opacity-off" src="ImagenesMostrar/CentsTurist/SantaApolonia2.jpg" style="width:100%" onclick="currentDiv(3)" alt="Observa todo cajamarca desde Santa Apolonia">
+		    </div>
+		    <div class="w3-col s3">
+		     <img class="demo w3-opacity w3-hover-opacity-off" src="ImagenesMostrar/CentsTurist/viendo-la-laguna-san2.jpg" style="width:100%" onclick="currentDiv(4)" alt="Siente la tranquilidad de la laguna San Nicolas">
+		    </div>
+		   </div> <!-- End row -->
+		  </div> <!-- End w3-content -->
+		  
+		 </div> <!-- End modal content -->
+		</div> <!-- End modal -->
+		
+		<div class="w3-padding-16 w3-panel w3-pale-blue w3-bottombar w3-border-blue w3-border">
+		    <p>Selecciona las imagenes para tener una mejor vista de las imagenes</p>
+		</div>
+		
+		<div class="w3-panel w3-border w3-round w3-half" style="text-align: justify; font-size: 24px">
+		    <p>La ciudad lleva impresa las huellas de la historia del Perú. Se puede ver tres vertientes de épocas distintas, es como si la ciudad llevará tres en una, la inca, colonial y contemporánea. Es una mezcla de tiempos.</p>
+		    <p>La Plaza de Armas, conserva una pileta que muestra sus formas coloniales, con un aire similar a la Plaza de Cusco y Lima. Considerada una de las plazas más bellas y antiguas del país. Alrededor de la plaza se edificaron las principales de iglesias de la ciudad: La Catedral y San Francisco. Las cuales son de estilo barroco.</p>
+		    <p>Además se encuentran otros centros religiosos, la Capilla de la Virgen de los Dolores, la cual es sacada en andas durante Semana Santa y es una joya del barroco. Asimismo el Conjunto Monumental de Belén donde está la iglesia Belén, la Capilla, el hospital y el Museo arqueológico, el cuarto de rescate, el INC y la dirección de Turismo. Además está rodeada de casonas antiguas que llevan balcones coloniales y restaurantes que preparan platos típicos cajamarquinos.
+		    </p>
+		    
+		    <hr>
+		    <h3>RESUMEN OPINIONES</h3>
+		    <p>Excelente</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:86%">80%</div>
+	          </div>
+	        <p>Muy bueno</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:10%">17%</div>
+	          </div>
+		    <p>Regular</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:2%">3%</div>
+	          </div>
+	        <p>Malo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:2%">0</div>
+	          </div>  
+	        <p>Pesimo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>
+	        <hr>
+		</div>
+		
+		<div class="w3-panel w3-half">
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/Cajamarca/plaza-de-armas-at-night.jpg" style="width:100%">
+		</div>
+		
+  </div>
+  </div>
+
+  <div id="Fade" class="w3-container city w3-animate-left" style="display:none">
+    <div class="w3-panel w3-border w3-round w3-half w3-hover-khaki" style="text-align: justify; font-size: 20px">
+		    <div class="w3-panel w3-red w3-round-xxlarge">BAÑOS DEL INCA</div>
+		    <p>Los baños termales del Inca está situado a 6 km. de la ciudad. El lugar es considerado la capital de los baños termales del Perú. Por tener la primera fuente que se cita en la historia. El alto contenido de minerales de las aguas que afloran de los perolitos de alrededor de 75ºC presenta propiedades curativas que atraen a los viajeros desde tiempos prehispánicos.</p>
+		    <p>Cuenta la historia que a la llegada de Pizarro, Atahualpa se encontraba en ese lugar (antes Pultumarca). Actualmente hay servicios de pozas individuales, piscina y sauna. Además se encuentra la poza del Inca, donde se bañaba Atahualpa, ¿increíble, no?</p>
+		    <p>Además se encuentran otros centros religiosos, la Capilla de la Virgen de los Dolores, la cual es sacada en andas durante Semana Santa y es una joya del barroco. Asimismo el Conjunto Monumental de Belén donde está la iglesia Belén, la Capilla, el hospital y el Museo arqueológico, el cuarto de rescate, el INC y la dirección de Turismo. Además está rodeada de casonas antiguas que llevan balcones coloniales y restaurantes que preparan platos típicos cajamarquinos.
+		    </p>
+		    <hr>
+		    <h3>RESUMEN OPINIONES</h3>
+		    <p>Excelente</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+	          </div>
+	        <p>Muy bueno</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:17%">17%</div>
+	          </div>
+		    <p>Regular</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:3%">3%</div>
+	          </div>
+	        <p>Malo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>  
+	        <p>Pesimo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>
+	        <hr>
+	</div>
+	<div class="w3-panel w3-half">
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CajamarcaCarga/bañosdelInca2.jpg" style="width:100%">
+			<hr>
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CajamarcaCarga/bañsInca.jpg" style="width:100%">
+	</div>
+  </div>
+	
+  <div id="Left" class="w3-container city w3-animate-left" style="display:none">
+    <div class="w3-panel w3-border w3-round w3-half" style="text-align: justify; font-size: 20px">
+		    <div class="w3-panel w3-red w3-round-xxlarge">HACIENDA LA COLPA</div>
+		    <p>Está situado a 11km. de la Plaza de Armas de Cajamarca. Se crían vacas lecheras que se acercan rápidamente cuando los visitantes las llaman por su nombre. En el lugar también funciona una fábrica de productos lácteos. La llamada de las vacas por su nombre es alrededor de las 4pm.</p>
+		    <p>Además se encuentran otros centros religiosos, la Capilla de la Virgen de los Dolores, la cual es sacada en andas durante Semana Santa y es una joya del barroco. Asimismo el Conjunto Monumental de Belén donde está la iglesia Belén, la Capilla, el hospital y el Museo arqueológico, el cuarto de rescate, el INC y la dirección de Turismo. Además está rodeada de casonas antiguas que llevan balcones coloniales y restaurantes que preparan platos típicos cajamarquinos.
+		    </p>
+		    <p>Cuenta la historia que a la llegada de Pizarro, Atahualpa se encontraba en ese lugar (antes Pultumarca). Actualmente hay servicios de pozas individuales, piscina y sauna. Además se encuentra la poza del Inca, donde se bañaba Atahualpa, ¿increíble, no?</p>
+		   <hr>
+		    <h3>RESUMEN OPINIONES</h3>
+		    <p>Excelente</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">80%</div>
+	          </div>
+	        <p>Muy bueno</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:15%">17%</div>
+	          </div>
+		    <p>Regular</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:10%">3%</div>
+	          </div>
+	        <p>Malo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:8%">0</div>
+	          </div>  
+	        <p>Pesimo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:7%">0</div>
+	          </div>
+	        <hr> 
+	</div>
+	<div class="w3-panel w3-half">
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/hacienda-la-collpa.jpg" style="width:100%">
+			<hr>
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CajamarcaCarga/cult4.jpg" style="width:100%">
+	</div>
+  </div>
+
+  <div id="Top" class="w3-container city w3-animate-top" style="display:none">
+    <div class="w3-panel w3-border w3-round w3-half" style="text-align: justify; font-size: 20px">
+		    <div class="w3-panel w3-red w3-round-xxlarge">LAGUNA SAN NICOLAS</div>
+		    <p>Belllisima y paz total,lugar relajante y lleno de paz,naturaleza maravilllosa. Debe darse más apoyo... Más información</p>
+		    <p>Muy bella y relacionada con una triste historia, es relajante termina un paseo en la balsa y uno... Más información
+		    </p>
+		    <p>Muy bella y relacionada con una triste historia, es relajante termina un paseo en la balsa y uno sale totalmente relajado.</p>
+		    <p>Además del paseo en bote, hay un restaurante y un hotel. En el restaurante, al lado de la isla El Aventurero, ofrecen ceviche de pejerrey o pejerrey frito. Ambos recomendables y económico. Los paisajes buenísimos. En la laguna, corre un poco de viento</p>
+		    <hr>
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/SantaApolonia/otro-angulo.jpg" style="width:100%">
+			<hr>
+		    <h3>RESUMEN OPINIONES</h3>
+		    <p>Excelente</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">80%</div>
+	          </div>
+	        <p>Muy bueno</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:12%">17%</div>
+	          </div>
+		    <p>Regular</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:13%">3%</div>
+	          </div>
+	        <p>Malo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>  
+	        <p>Pesimo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>
+	        <hr>
+	</div>
+	<div class="w3-panel w3-half">
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/viendo-la-laguna-san2.jpg" style="width:100%">
+			<hr>
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/SantaApolonia/mas-vista.jpg" style="width:100%">
+			<hr>
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/SantaApolonia/otro-angulo.jpg" style="width:100%">
+	</div>
+  </div>
+
+  <div id="Right" class="w3-container city w3-animate-right" style="display:none">
+    <div class="w3-panel w3-border w3-round w3-half" style="text-align: justify; font-size: 20px">
+		    <div class="w3-panel w3-red w3-round-xxlarge">SANTA APOLONIA</div>
+		    <p>Es el Mirador que predomina en toda la ciudad.</p>
+		    <p>Se puede acceder por las trescientas escaleras. No obstante, al llegar todo el cansancio queda recompensado por la maravillosa vista que hay en la cima. En el lugar se encuentra la silla del Inca, que deviene de la época preinca. También se encuentra una iglesia muy interesante.
+		    </p>
+		    <p>Cuenta la historia que a la llegada de Pizarro, Atahualpa se encontraba en ese lugar (antes Pultumarca). Actualmente hay servicios de pozas individuales, piscina y sauna. Además se encuentra la poza del Inca, donde se bañaba Atahualpa, ¿increíble, no?</p>
+		    <hr>
+		    <img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/SantaApolonia/20160922-065005-largejpg.jpg" style="width:100%">
+		    <hr>
+		    <h3>RESUMEN OPINIONES</h3>
+		    <p>Excelente</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+	          </div>
+	        <p>Muy bueno</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:17%">17%</div>
+	          </div>
+		    <p>Regular</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:3%">3%</div>
+	          </div>
+	        <p>Malo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>  
+	        <p>Pesimo</p>
+	          <div class="w3-light-grey w3-round-xlarge w3-small">
+	            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:0%">0</div>
+	          </div>
+	        <hr>
+	</div>
+	<div class="w3-panel w3-half">
+			<img class="w3-animate-opacity w3-hover-grayscale" src="ImagenesMostrar/CentsTurist/SantaApolonia/Santa-Apolonia.jpg" style="width:100%">
+			<hr>
+			
+	</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <!-- Final Contenido de la pagina -->
-</div>
+
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+<div class="w3-col w3-container w3-blue" style="width:0px"></div>
+<footer class="w3-rest w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:190px;margin-right:0px"> 
   <i class="fa icon-facebook2 w3-hover-opacity"></i>
   <i class="fa icon-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -49,7 +349,11 @@
   <a href="mailto:serius.10.11@gmail.com"><span class="icon-mail4 fa-x social"></span></a>
   <p class="txt-railway" Style="color:bold"> - &copy;Derechos reservados- <span class="icon-spinner4 color-log"></span><strong style="color:black"><abbr title="Milton Valdivia Chávez"> M.V.</abbr> </strong></p>
 </footer>
- 
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>	
+
+
 <script>
 // Toggle grid padding
 function myFunction() {
@@ -73,12 +377,63 @@ function w3_close() {
 </script>
 
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".ui-button .ui-click").click(function(){
-            $(".ui-button").toggleClass("on");
-        });
-    });
+<!--  presentacion de imagenes -->
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!-- Menu de las opciones turisticas -->
+<script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
 </script>
 
 </body>

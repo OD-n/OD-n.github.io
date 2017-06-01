@@ -1,31 +1,10 @@
 @CHARSET "UTF-8";
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-}
-
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
+	body {
+      position: relative; 
+  }
+  
+  #section1 {padding-top:50px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;color: #fff; background-color: #009688;}
