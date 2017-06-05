@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenido{
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 2000;
+}
+.social li a{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.social li a:hover{background-color: black; width: 50px;}
+.facebook{background-color: #222283;}
+.twitter{background-color: #1FB1EE;}
+.youtube{background-color: #EE2A1F;}

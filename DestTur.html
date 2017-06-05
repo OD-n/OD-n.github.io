@@ -12,7 +12,9 @@
 <link rel="stylesheet" href="css/AcercaDe.css">
 <link rel="stylesheet" href="css/DestinoTur.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script>
+w3.includeHTML();
+</script>
 <body>
 
 <!-- Sidebar -->
@@ -32,7 +34,7 @@
 <div class="w3-clear"></div>
 </div>
 <!-- Inicio Contenido de la pagina --> 
-
+<div w3-include-html="AcercaDe.html"></div>
 	
 
 
@@ -40,7 +42,7 @@
 <!-- Barra de navegación --> 
 
 <div class="w3-sidebar w3-bar-block w3-blue w3-card-2 w3-round-xlarge w3-animate-left" style="width:190px">
-  <button class="w3-bar-item w3-btn tablink w3-orange w3-large w3-padding-24" onclick="openLink(event, 'Fadez')"><span class="icon-delicious"></span> Vista rápida</button>
+  <button id="vistar" class="w3-bar-item w3-btn tablink w3-orange w3-large w3-padding-24" onclick="openLink(event, 'Fadez')" active><span class="icon-delicious"></span> Vista rápida</button>
   <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Fade')"><span class="icon-stackoverflow"></span> Baños del Inca</button>
   <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Left')"><span class="icon-stackoverflow"></span> La Collpa</button>
   <button class="w3-bar-item w3-button tablink w3-padding-24" onclick="openLink(event, 'Right')"><span class="icon-stackoverflow"></span> Santa Apolonia</button>
@@ -435,6 +437,16 @@ function openLink(evt, animName) {
   evt.currentTarget.className += " w3-red";
 }
 </script>
+
+<script type="text/javascript">
+	var a = document.getElementById("vistar");
+	a.click();
+</script>
+
+
+
+<script src="JS/aloha.js"></script>
+<script src="js/w3.js"></script>
 
 </body>
 </html>
